@@ -1,0 +1,19 @@
+/* pages/Mall/mall.wxss */
+
+.topView {
+  display: flex;
+  justify-content: space-between;
+  border: 2rpx gainsboro solid;
+  height: 80rpx;
+}
+
+.swiper-tab-item {
+  width: 33%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+.active{
+  border-bottom: 5rpx red solid;
+  }

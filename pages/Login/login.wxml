@@ -1,0 +1,9 @@
+<!--pages/Login/login.wxml-->
+<form bindsubmit="confirm" class="login-form">
+<image class="iconImage" src="/banner/1.jpg"></image>
+  <input class="login-form-inputNumber" type="number" confirm-type="done" placeholder="请输入手机号码" focus="true" maxlength="11" bindinput="bindKeyInput"></input>
+    <input class="login-form-inputPassword" type="text" confirm-type="done" placeholder="请输入密码" focus="true" password="{{false}}" bindinput="passwordInput"></input>
+
+    <button class="loginButton" bindtap="loginButtonTap">登录</button>
+        <!-- <view>{{longinStatus}}</view> -->
+</form>

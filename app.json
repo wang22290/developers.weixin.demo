@@ -1,0 +1,54 @@
+{
+  "pages": [
+    "pages/Login/login",
+    "pages/Home/home",
+    "pages/Cartoon/cartoon",
+    "pages/Mall/mall",
+    "pages/Mine/mine",
+    "custom-tab-bar/index",
+    "pages/shopContent/shopContent",
+    "pages/order/order"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "custom": false,
+    "color": "#7a7e83",
+    "selectedColor": "#000000",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/Home/home",
+        "text": "home",
+        "iconPath": "/Images/home.png",
+        "selectedIconPath": "/Images/home.png"
+      },
+      {
+        "pagePath": "pages/Cartoon/cartoon",
+        "text": "cartoon",
+        "iconPath": "/Images/cartoon.png",
+        "selectedIconPath": "/Images/cartoon.png"
+      },
+      {
+        "pagePath": "pages/Mall/mall",
+        "text": "mall",
+        "iconPath": "/Images/mall.png",
+        "selectedIconPath": "/Images/mall.png"
+      },
+      {
+        "pagePath": "pages/Mine/mine",
+        "text": "mine",
+        "iconPath": "/Images/user.png",
+        "selectedIconPath": "/Images/user.png"
+      }
+    ]
+  },
+  "usingComponents":{}
+}

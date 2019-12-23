@@ -1,0 +1,37 @@
+/* components/userInfomation-item/userinfomation-item.wxss */
+.item{
+  background-color:white;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.userinfomation-item{
+  width: 99%;
+  height: 100%;
+}
+
+.lineView{
+  width: 1%;
+  height: 50%;
+  margin-top: 25%;
+  background-color:rgba(128, 128, 128, 0.185);
+}
+ .userinfomation-item-top{
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: lightskyblue;
+  margin-bottom: -5%;
+} 
+ .userinfomation-item-bottom{
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgba(0, 0, 0, 0.411);
+  margin-top: -5%;
+} 

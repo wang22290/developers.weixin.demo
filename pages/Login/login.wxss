@@ -1,0 +1,60 @@
+/* pages/Login/login.wxss */
+.iconImage{
+  width: 700rpx;
+  height: 500rpx;
+  margin-top: 20rpx;
+  margin-left: -15rpx;
+}
+.login-form{
+  width: 90%;
+  height: 500rpx;
+  margin-left: 5%;
+  margin-top: 40rpx;
+  /* background-color: blueviolet; */
+}
+.login-form-inputNumber{
+  width: 80%;
+  height: 80rpx;
+  /* border-color: red;
+  border: 1rpx; */
+  /* 愈发觉得格式 ：border：length   style  color  
+  length   默认为0，
+  style none ，hidden，dotted，dashed，solid，double，groove，ridge，inset，outset。默认为none，必须写
+  color  可以不写，默认黑色
+  */
+  border: 1px dashed ;
+  /* 常用取值  medium：默认值，相当于3px。thin：1px。thick：5px。 */
+  /* border-width: thick; */
+  /* border-color: rebeccapurple;  颜色设置*/
+
+  /* 3.border-top:设置顶部边框。border-top-width,border-top-style,border-top-color 分别设置 宽度，样式以及颜色 */
+  border-top: 1rpx dotted red;
+
+/* 4.border-right：设置右边框。 */
+border-right: 2rpx dashed green;
+/* 5.border-bottom：设置底边框。 */
+border-bottom: 2rpx solid yellow;
+/* 6.border-left：设置左边框。 */
+border-left: 3rpx double blue;
+/* 7.border-radius：设置对象使用圆角边框。取值为数字或者百分比。  */
+border-top-left-radius: 5rpx;
+border-top-right-radius: 10rpx;
+border-bottom-left-radius: 5rpx;
+border-bottom-right-radius: 10rpx;
+
+  margin-left: 10%;
+  margin-top: 200rpx;
+}
+.login-form-inputPassword{
+  width: 80%;
+  height: 80rpx;
+  border: 1px dashed red;
+  margin-left: 10%;
+  margin-top: 30rpx;
+}
+.loginButton{
+   margin-top: 60rpx;
+   color: white;
+   font-size: 40rpx;
+   background-color: rgba(0, 0, 255, 0.801);
+}

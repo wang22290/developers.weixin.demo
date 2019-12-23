@@ -1,0 +1,10 @@
+<!--components/userInfomation-item/userinfomation-item.wxml-->
+<view class="item">
+  <!-- 显示动态内容 -->
+  <view class="userinfomation-item">
+     <view class="userinfomation-item-top"> {{changeValue}}</view>
+    <!-- 显示名称 -->
+    <view class="userinfomation-item-bottom">{{name}}</view> 
+  </view>
+  <view class="lineView"></view>
+</view>

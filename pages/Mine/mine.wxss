@@ -1,0 +1,63 @@
+/* pages/Mine/mine.wxss */
+page {
+    background-color: #eee;
+}
+
+.topBackImage{
+  width: 100%;
+  position: relative;
+  z-index: -1;
+}
+.topBackImage-icon{
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 100rpx;
+  position: absolute;
+  right: 20%;
+  top: 20%;
+}
+.topBackImage-name{
+  position: absolute;
+  right: 10%;
+  top: 40%;
+}
+.userInfomation{
+  background-color:white;
+  width: 90%;
+  margin-left: 5%;
+  height: 140rpx;
+  margin-top: -50rpx;
+  border-radius: 10rpx;
+  display: flex;
+  justify-content: space-between;
+  
+}
+.userinfomation-item{
+  width: 24%;
+  height: 100%;
+  border-radius: 10rpx;
+  overflow:hidden;
+}
+.settingInformation{
+  width: 90%;
+  margin-top: 20rpx;
+  border-radius: 10rpx;
+  margin-left: 5%;
+  overflow: hidden;
+}
+.settingInformation-item{
+  width: 100%;
+  height: 100rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  color: rgba(0, 0, 0, 0.733);
+  border-bottom: 1rpx rgba(128, 128, 128, 0.253) solid;
+}
+.bottomImage{
+   width: 90%;
+  margin-top: 20rpx;
+  margin-left: 5%;
+   border-radius: 10rpx;
+}

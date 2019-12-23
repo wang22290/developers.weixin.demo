@@ -1,0 +1,22 @@
+<view class="backView">
+  <!-- 用户头像顶部区域 -->
+  <view class="userTopView">
+    <image class="topBackImage" src="/banner/mine-1.jpg">
+      <!-- 用户头像 -->
+      <image class="topBackImage-icon" src="/banner/1.jpg" bindtap="pushUserSetVC"></image>
+      <!-- 用户昵称 -->
+      <view class="topBackImage-name">路飞</view>
+    </image>
+    <!-- 用户账户信息 -->
+    <view class="userInfomation">
+      <userinfomation-item class="userinfomation-item" data-index="{{index}}" wx:for="{{userinfomationdata}}" wx:key="index" changeValue="{{item.changeValue}}" name="{{item.name}}"></userinfomation-item>
+    </view>
+  </view>
+  <!-- 个人设置区域 -->
+  <view class="settingInformation">
+    <view class="settingInformation-item" wx:for="{{settingData}}" wx:key="{{index}}">
+      {{item.name}}
+    </view>
+  </view>
+  <image class="bottomImage" src="/banner/1.jpg"></image>
+</view>

@@ -1,0 +1,126 @@
+// Component({
+//   pageLifetimes: {
+//     show() {
+//       if (typeof this.getTabBar === 'function' &&
+//         this.getTabBar()) {
+//         this.getTabBar().setData({
+//           selected: 3
+//         })
+//       }
+//     }
+//   },
+  
+
+// })
+
+
+
+
+
+// pages/Mine/mine.js
+Page({
+
+  /**
+   * 页面的初始数据
+   */
+  data: {
+    currentIndex:0,
+    userinfomationdata:[
+      {
+        "changeValue":"0元",
+        "name":"账户余额"
+      },
+      {
+        "changeValue": "0张",
+        "name": "咖啡钱包"
+      },
+      {
+        "changeValue": "0张",
+        "name": "优惠券"
+      },
+      {
+        "changeValue": "0张",
+        "name": "礼品卡"
+      }
+    ],
+    settingData: [
+      {
+        "imageName": "0元",
+        "name": "收货地址"
+      },
+      {
+        "imageName": "0张",
+        "name": "兑换优惠"
+      },
+      {
+        "imageName": "0张",
+        "name": "发票管理"
+      },
+      {
+        "imageName": "0张",
+        "name": "客户服务"
+      }
+    ]
+  },
+  /*
+  * 头像点击
+  */
+  pushUserSetVC:function(e){
+   console.log("跳个人信息设置");
+  },
+  /**
+   * 生命周期函数--监听页面加载
+   */
+  onLoad: function (options) {
+
+  },
+
+  /**
+   * 生命周期函数--监听页面初次渲染完成
+   */
+  onReady: function () {
+
+  },
+
+  /**
+   * 生命周期函数--监听页面显示
+   */
+  onShow: function () {
+
+  },
+
+  /**
+   * 生命周期函数--监听页面隐藏
+   */
+  onHide: function () {
+
+  },
+
+  /**
+   * 生命周期函数--监听页面卸载
+   */
+  onUnload: function () {
+
+  },
+
+  /**
+   * 页面相关事件处理函数--监听用户下拉动作
+   */
+  onPullDownRefresh: function () {
+
+  },
+
+  /**
+   * 页面上拉触底事件的处理函数
+   */
+  onReachBottom: function () {
+
+  },
+
+  /**
+   * 用户点击右上角分享
+   */
+  onShareAppMessage: function () {
+
+  }
+})

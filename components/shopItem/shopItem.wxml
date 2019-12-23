@@ -1,0 +1,20 @@
+<!--components/shopItem/shopItem.wxml-->
+<view class="shopItem" bindtap="shopItemPush">
+  <view class="shopItem-image">
+    <image class="shopItem-image-1" src="/banner/1.png" mode="aspectFill"></image>
+  </view>
+  <view class="shopItem-title"> 联名陶瓷内壁咖啡杯（黑） font-size: 30rpx;
+  margin-left: 20rpx;
+    <!-- <text class="shopItem-title-text" > 联名陶瓷内壁咖啡杯（黑）</text> -->
+  </view>
+  <view class="shopItem-priceView">
+    <view class="shopItem-priceView-price"> ¥230</view>
+    <view class="shopItem-priceView-oldPrice"> $90</view>
+    <view class="shopItem-priceView-pay">
+     <icon class="dayTop_listImage_addOrder"  type="warn" bindtap="icon_navigationPush"> gouwu</icon>
+    </view>
+  </view>
+  <view class="shopItem-number"> 
+  <text class="shopItem-number-text">已售卖1000</text>
+ </view>
+</view>

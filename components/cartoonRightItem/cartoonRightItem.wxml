@@ -1,0 +1,34 @@
+<view class="cartoonRightItem">
+  <view class="left">
+    <image class="left-image" src="/banner/1.jpg" mode="aspectFit">
+    </image>
+  </view>
+  <view>
+    <view class="itemName-top" hover-class="none" hover-stop-propagation="false">
+      <view class="itemName" selectable="false" space="false" decode="false"> 
+     {{name}}
+     </view>
+      <icon class="itemIcon-image" type="success" size="23" color="">
+      </icon>
+    </view>
+    <view  class="itemName-En" selectable="false" space="false" decode="false">  
+        {{en_name}}
+    </view>
+    <view class="rightItem-bottom" hover-class="none" hover-stop-propagation="false">
+      <view class="rightItem-bottom-newPrice" hover-class="none" hover-stop-propagation="false">
+       {{newPrice}}
+      </view>
+      <view class="rightItem-bottom-oldPrice" hover-class="none" hover-stop-propagation="false">
+        {{oldPrice}}
+      </view>
+      <view class="rightItem-bottom-first" hover-class="none" hover-stop-propagation="false">
+        首杯价
+      </view>
+    </view>
+
+    <icon class="addOrderIcon" type="success|success_no_circle|info|warn|waiting|cancel|download|search|clear" size="23" color="">
+
+    </icon>
+  </view>
+
+</view>
