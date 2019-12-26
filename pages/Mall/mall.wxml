@@ -1,19 +1,53 @@
-<view>
-  <!-- 顶部切换 -->
-  <!-- <scroll-view class="tabScroll" scroll-x="false" scroll-y="false" upper-threshold="50" lower-threshold="50" 
-    scroll-top="0" scroll-left="0" scroll-into-view="" scroll-with-animation="false" enable-back-to-top="false" 
-    bindscrolltoupper="" bindscrolltolower="" bindscroll="">
-
-</scroll-view> -->
-
-  <view class="topView" hover-class="none" hover-stop-propagation="false">
-    <view class="swiper-tab-item {{currentIndex == 0?'active':''}}"  data-current = '0' bindtap="clickTag">全部</view>
-    <view class="swiper-tab-item {{currentIndex == 1?'active':''}}"  data-current = '1'  bindtap="clickTag" >立即可取</view>
-    <view class="swiper-tab-item {{currentIndex == 2?'active':''}}"  data-current = '2' bindtap="clickTag">预约可取</view>
+<view class="maillView">
+  <!-- 饮品view -->
+  <view class="drinkViewHide{{drinkData.length > 0?'drinkViewShow':''}}">
+    <!-- 饮品头部 -->
+    <view class="drinkTitle " hover-class="none" hover-stop-propagation="false" wx:if="{{drinkData.length > 0}}?">
+      饮品与小食订单
+    </view>
+    <!-- 饮品列表 -->
+    <block wx:for="{{drinkData}}" wx:key="{{index}}">
+      <drinkItem class="drinkViewItem" name="{{index}}" productNumber="{{productNumber}}" price="20" bindselectedIconTap="selectedIconTap" bindchangeProductNumber ="changeProductNumber">
+      </drinkItem>
+    </block>
+    <!-- 饮品列表总计 -->
+    <view class="drinkTotal" hover-class="none" hover-stop-propagation="false">
+      <view class="drinkTotalPrice">
+      <view class="drinkTotalPrice-price">应支付¥{{totalPrice}}</view>
+      <text class="drinkTotalPrice-discount">用券可抵扣¥123</text>
+      </view>
+      <view class="drinkTotalPayBtn" bindtap="drinkTotalPayBtnTap">
+      去结算
+      </view>
+    </view>
   </view>
 
-  <!-- 订单数据展示-->
-  <view class="" hover-class="none" hover-stop-propagation="false">
 
+  <!-- 潮流饰品view -->
+  <view class="trendViewHide{{trendData.length > 0?'trendViewShow':''}}">
+    <!-- 潮流饰品title -->
+    <view class="drinkTitle " hover-class="none" hover-stop-propagation="false" wx:if="{{drinkData.length > 0}}?">
+      潮流饰品view
+    </view>
+      <!-- 潮流饰品列表 -->
+    <block wx:for="{{trendData}}" wx:key="{{index}}">
+<!-- 
+      <trendItem class="trendViewItem" hover-class="none" hover-stop-propagation="false" name="{{index}}">
+
+      </trendItem> -->
+      <drinkItem class="drinkViewItem" name="{{index}}" productNumber="{{productNumber}}" price="20" bindselectedIconTap="selectedIconTap" bindchangeProductNumber ="changeProductNumber">
+      </drinkItem>
+    </block>
+      <!-- 潮流饰品列表总计 -->
+    <view class="trendTotal" hover-class="none" hover-stop-propagation="false">
+      <view class="drinkTotalPrice">
+      <view class="drinkTotalPrice-price">应支付¥{{totalPrice}}</view>
+      <text class="drinkTotalPrice-discount">用券可抵扣¥123</text>
+      </view>
+      <view class="drinkTotalPayBtn">
+      去结算
+      </view>
+    </view>
   </view>
+
 </view>

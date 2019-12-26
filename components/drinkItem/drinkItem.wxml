@@ -1,0 +1,36 @@
+<!--components/drinkItem/drinkItem.wxml-->
+<view class="drinkItem">
+<!--选中/非选中-->
+<icon class="selectedIcon" type="{{isSelected?'success':'cancel'}}" size="23" color="" bind:tap="selectedIconTap">
+
+</icon>
+<!-- <image class="selectedIcon" src="/banner/1.png" mode="aspectFit=" bind:tap="selectedIconTap">
+    
+</image> -->
+<!--产品图片-->
+<image class="productImage" src="/banner/1.jpg" mode="aspectFill" lazy-load="false">
+    
+</image>
+<!--产品介绍-->
+<view class="productdescrip" hover-class="none" hover-stop-propagation="false">
+<view class="" hover-class="none" hover-stop-propagation="false">
+     <text class="productdescripName" style="font-size:22px">{{name}}</text>
+     <text class="productdescripDiscount" style="font-size:12px;background:#E76B1F;border-radius:10rpx;color:white;padding:3px;margin:0px 0px 0px 5px ">充2赠1</text>
+</view>
+  
+   <text style="font-size:15px;color:#A9A9A9">大/全糖/冰</text>
+   <view class="" hover-class="none" hover-stop-propagation="false">
+               <text style="font-size:22px">${{price}}</text>
+        <text style="font-size:15px;border-radius:10rpx;color:#E76B1F;border:1px solid #E76B1F;margin:0px 0px 0px 5px ">首杯享5折</text>
+   </view>
+  
+</view>
+<!--购买数量 增/减按钮-->
+<view class="productNumber" hover-class="none" hover-stop-propagation="false">
+  <image class="productNumber-jian" src="/banner/jian_.png" mode="aspectFit" bindtap="productNumberjianTap">
+      
+  </image>
+  <text class="productNumber-number" >{{productNumber}}</text>
+  <image class="productNumber-jia" src="/banner/jia_.png" mode="aspectFit" bindtap="productNumberjiaTap"></image>
+</view>
+</view>

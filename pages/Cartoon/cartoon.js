@@ -330,12 +330,10 @@ Page({
 
 //切换左侧选项
   cartoonViewleftsubjectTap:function(e){
-    this.setData({
-      currentIndex:e.currentTarget.dataset.index,
-    })
     console.log("data" + e.currentTarget.dataset.index),
     this.setData({
-      toView:"data"+e.currentTarget.dataset.index,
+      currentIndex:e.currentTarget.dataset.index,
+      toView: "data" + e.currentTarget.dataset.index,
     })
   },
   /**

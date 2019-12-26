@@ -1,0 +1,52 @@
+/* components/drinkItem/drinkItem.wxss */
+
+.drinkItem{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 200rpx;
+  background-color: white;
+  border-top: 1rpx rgba(192, 190, 190, 0.486) solid;
+}
+.selectedIcon{
+  margin-left: 3%;
+  width: 10rpx;
+  height: 10rpx;
+}
+.productImage{
+  margin-left: 20rpx;
+  width: 20%;
+  height: 150rpx;
+  border-radius: 10rpx;
+  
+}
+.productdescrip{
+  width: 40%;
+}
+.productdescripName{
+
+}
+.productdescripDiscount{
+
+}
+.productNumber{
+  width: 20%;
+  margin-right: 3%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.productNumber-jian{
+  width: 80rpx;
+  height: 80rpx;
+}
+.productNumber-number{
+  width: 150rpx;
+  text-align: center;
+  font-size: 40rpx;
+}
+.productNumber-jia{
+  width: 80rpx;
+  height: 80rpx;
+}

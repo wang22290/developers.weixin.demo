@@ -13,11 +13,7 @@ Component({
   /**
    * 组件的初始数据
    */
-  data: {
-    // this.setData({
-    //   name: this.properties.name ,
-    // })
-    
+  data: {    
   },
 
   /**

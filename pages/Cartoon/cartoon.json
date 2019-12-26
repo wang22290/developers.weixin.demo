@@ -1,5 +1,6 @@
 {
     "usingComponents": {
       "cartoonRightItem":"/components/cartoonRightItem/cartoonRightItem"
-    }
+    },
+    "navigationBarTitleText": "菜单"
 }

@@ -1,5 +1,8 @@
 {
-  "usingComponents": {},
-  "navigationBarTitleText":"订单列表"
+  "usingComponents": {
+    "drinkItem":"/components/drinkItem/drinkItem",
+    "trendItem":"/components/trendItem/trendItem"
+  },
+  "navigationBarTitleText":"购物车"
 
 }

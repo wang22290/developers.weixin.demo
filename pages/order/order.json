@@ -1,4 +1,7 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+   
+  },
+  "navigationBarTitleText": "订单列表"
 
 }

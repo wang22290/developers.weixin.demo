@@ -1,19 +1,72 @@
-/* pages/Mall/mall.wxss */
-
-.topView {
-  display: flex;
-  justify-content: space-between;
-  border: 2rpx gainsboro solid;
-  height: 80rpx;
+page{
+  background-color: rgba(128, 128, 128, 0.103);
 }
 
-.swiper-tab-item {
-  width: 33%;
+.drinkViewHide {
+  display: none;
+
+}
+
+.drinkViewShow {
+  display: block;
+  background-color:white;
+ 
+}
+
+.trendViewHide {
+  display: none;
+}
+
+.trendViewShow {
+  display: block;
+}
+.drinkTitle{
+  margin-top: 10rpx;
+  height: 100rpx;
   display: flex;
+  justify-content: left;
   align-items: center;
-  justify-content: center;
-  
+  background-color:white;
 }
-.active{
-  border-bottom: 5rpx red solid;
-  }
+.drinkTotal{
+  height: 200rpx;
+  display: flex;
+  background-color: white;
+  justify-content: left;
+  align-items: center;
+  border-top: 1rpx rgba(192, 190, 190, 0.486) solid;
+}
+.drinkTotalPrice{
+  margin-left: 15%;
+  width: 50%;
+  align-items: left;
+}
+.drinkTotalPrice-price{
+  text-align: left;
+  font-size: 40rpx;
+}
+.drinkTotalPrice-discount{
+   text-align: left;
+  font-size: 25rpx;
+  border: 1rpx #E76B1F solid;
+  padding: 10rpx;
+  border-radius: 10rpx;
+
+}
+.drinkTotalPayBtn{
+  padding: 30rpx;
+  width: 25%;
+  border-radius: 60rpx;
+  background-color: #E76B1F;
+  color: white;
+  text-align: center;
+  font-size: 40rpx;
+}
+.trendTotal{
+   height: 200rpx;
+  display: flex;
+  background-color: white;
+  justify-content: left;
+  align-items: center;
+  border-top: 1rpx rgba(192, 190, 190, 0.486) solid;
+}

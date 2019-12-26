@@ -37,8 +37,11 @@ Page({
       })
       
     }else{
-      this.setData({
-        longinStatus: false
+      wx.showToast({
+        title: '账号或密码错误',
+        icon:'none',
+        duration:1000,
+        mask:true
       })
     }
   },

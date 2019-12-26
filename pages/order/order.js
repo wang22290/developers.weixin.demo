@@ -5,7 +5,24 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    currentIndex: 0,
+    tabData: [
+      "全部",
+      "立等可取",
+      "预约可取"
+    ]
+  },
+  /**
+ * tab点击切换
+ */
+  clickTag: function (e) {
+    // console.log(e)
+    var that = this;
+    var tempIndex = e.currentTarget.dataset.current
+    that.setData({
+      currentIndex: e.currentTarget.dataset.current,
+    });
+    // console.log(that.data.currentIndex);
   },
 
   /**

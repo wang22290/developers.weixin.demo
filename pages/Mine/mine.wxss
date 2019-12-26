@@ -56,8 +56,8 @@ page {
   border-bottom: 1rpx rgba(128, 128, 128, 0.253) solid;
 }
 .bottomImage{
-   width: 90%;
+  width: 90%;
   margin-top: 20rpx;
   margin-left: 5%;
-   border-radius: 10rpx;
+  border-radius: 10rpx;
 }
