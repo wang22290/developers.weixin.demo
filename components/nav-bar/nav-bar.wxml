@@ -1,0 +1,29 @@
+<!--components/nav-bar/nav-bar.wxml-->
+<view>
+<view style="height: {{topHeight}}px;">
+	<view class="container">
+		<view style="{{ statusBarStyle }}"></view>
+		<view class="nav-bar" style="{{ navBarStyle }}">
+			{{ title }}
+			<view class="icons">
+				<image bind:tap="back" class="back" wx:if="{{ back == 'true'}}" src=""></image>
+				<image bind:tap="home" class="home" wx:if="{{ home == 'true'}}" src=""></image>
+			</view>
+		</view>
+	</view>
+</view>
+
+</view>
+
+
+
+<!-- <view class="container">
+  <view style="{{ statusBarStyle }}"></view>
+  <view class="nav-bar" style="{{ navBarStyle }}">
+    {{ title }}
+    <view class="icons">
+      <image bind:tap="back" wx:if="{{ back == 'true' }}" class="back" src="/assets/imgs/nav_back.png" />
+      <image bind:tap="home" wx:if="{{ back == 'true' }}" class="home" src="/assets/imgs/nav_home.png" />
+    </view>
+  </view>
+</view> -->

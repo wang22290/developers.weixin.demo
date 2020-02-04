@@ -1,1 +1,11 @@
-/* pages/shopContent/shopContent.wxss */
+.nameView{
+background-color: red;
+width: 200rpx;
+height: 200rpx;
+}
+.nameView .tga{
+  background-color: yellow;
+  height: 100rpx;
+  width: 100rpx;
+
+}

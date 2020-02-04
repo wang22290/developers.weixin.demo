@@ -78,6 +78,20 @@
 					"id": -1,
 					"name": "pages/Mall/mall",
 					"pathName": "pages/Mall/mall",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/Home/home",
+					"pathName": "pages/Home/home",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/shopContent/shopContent",
+					"pathName": "pages/shopContent/shopContent",
 					"scene": null
 				}
 			]

@@ -1,2 +1,5 @@
 <!--pages/shopContent/shopContent.wxml-->
-<text>pages/shopContent/shopContent.wxml</text>
+
+<view class="nameviw">
+    <view class="tga"></view>
+</view>

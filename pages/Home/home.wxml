@@ -16,9 +16,9 @@
      circular="{{true}}"             是否采用衔接滑动	
      display-multiple-items = "{{1.1}}" 同时显示的滑块数量 -->
       <!-- <block wx:for="{{banner}}" wx:key="*this" style="height : 500rpx"> -->
-        <swiper-item wx:for="{{banner}}" wx:for-index="index" wx:for-item="item">
-          <image class="pages-section_swiper_image" src="{{item}}"></image>
-        </swiper-item>
+      <swiper-item wx:for="{{banner}}" wx:key="{{index}}" wx:for-index="index" wx:for-item="item">
+        <image class="pages-section_swiper_image" src="{{item}}"></image>
+      </swiper-item>
       <!-- </block> -->
     </swiper>
   </view>
@@ -60,13 +60,11 @@
         </view>
         <text class="dayTop_title_left_text">今日TOP</text>
       </view>
-      <!-- <view class="dayTop_title_right"></view> -->
-      <!-- <button class="dayTop_title_right_botton" size="min">ddd</button> -->
-      <icon>换一批</icon>
+      <view class="dayTop_title_right">换一批</view>
     </view>
     <view class="dayTop_listImage">
-      <view class="{{item.class}}" wx:for="{{for_listView}}" wx:for-index="index" wx:for-item="item">
-        <image class="{{item.imageClass}}" src="{{item.imageName}}"></image>
+      <view class="{{item.class}}" wx:for="{{for_listView}}" wx:key="{{index}}" bindtap="dayToplistImageTap" data-currentIndex="{{index}}" >
+        <image class="{{item.imageClass}}" src="{{item.imageName}}" ></image>
         <view class="dayTop_listImage_text">{{item.textString}}</view>
         <view class="dayTop_listImage_Price">
           <view class="dayTop_listImage_newPrice">{{item.newPrice}}</view>
@@ -94,7 +92,7 @@
     <view class="bootom-shop-title">
     </view>
     <view class="bottom-shop-listView">
-    <shopItem class="bottom-shop-listView-shopItem" wx:for="{{shopList}}" wx:for-index="index" wx:for-item="item"></shopItem>
+      <shopItem class="bottom-shop-listView-shopItem" wx:for="{{shopList}}" wx:key="{{index}}"></shopItem>
     </view>
   </view>
 </view>
